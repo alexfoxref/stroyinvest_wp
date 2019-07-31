@@ -34,6 +34,9 @@
     )); ?>
 </ul>
 
+<!-- Сбрасываем цикл вывода листа категорий -->
+<?php wp_reset_postdata(); ?>
+
 <div class="left-sidebar_object">
     <img src="./img/objects/object-preview-1.png" alt="Картинка объекта">
     <div class="left-sidebar_object-description">

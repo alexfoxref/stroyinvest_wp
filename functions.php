@@ -12,6 +12,7 @@ function invest_theme_scripts() {
 function invest_theme_styles_scripts() {
     wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/assets/slick/slick-theme.css' );
     wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/slick/slick.css' );
+    wp_enqueue_style( 'powerange', get_template_directory_uri() . '/assets/css/powerange.min.css' );
 }
 function jquery_lib(){
     wp_deregister_script( 'jquery' );
@@ -19,5 +20,6 @@ function jquery_lib(){
 	wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/slick/slick.min.js', array('jquery'), null, true);
     wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);
+    wp_enqueue_script( 'powerange', get_template_directory_uri() . '/assets/js/powerange.min.js', array('jquery'), null, true);
 }
 add_theme_support( 'custom-logo' );
