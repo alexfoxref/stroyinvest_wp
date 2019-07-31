@@ -20,6 +20,8 @@ function jquery_lib(){
 	wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/slick/slick.min.js', array('jquery'), null, true);
     wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);
-    wp_enqueue_script( 'powerange', get_template_directory_uri() . '/assets/js/powerange.min.js', array('jquery'), null, true);
+    wp_enqueue_script( 'powerange', get_template_directory_uri() . '/assets/js/powerange.min.js' );
 }
 add_theme_support( 'custom-logo' );
+add_theme_support( 'post-thumbnails', array( 'post' ) );          // Только для post
+add_image_size( 'object-preview', 371, 141, true );
